@@ -1,8 +1,6 @@
-
-.h1 {
-    color:blue;
+body {
+    height: 600px;
+    width: 100%;
+    background: linear-gradient(0deg, #ffc8da 0%, #615dad 100%);
 }
 
-.ctverec {
-    border: blue solid;
-}
