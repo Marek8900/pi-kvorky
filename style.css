@@ -1,6 +1,6 @@
 body {
-    height: auto;
-    min-height: 800px;
+    height: 100%;
+    min-height: 1000px;
     width: 100%;
     background: linear-gradient(0deg, #ffc8da 0%, #615dad 100%);
     background-repeat: no-repeat;
@@ -68,13 +68,6 @@ body {
     border-style: none;
 }
 /*KONEC MENU*/
-
-
-
-
-
-
-
 
 
 
@@ -158,28 +151,30 @@ figcaption {
 
 
 
-
-
-
-
-
-
 /*HRACI POLE*/
 
 .grid {
     display: grid;
     margin: auto;
+    padding: 200px;
     min-width: 200px;
     min-height: 200px;
     max-width: 500px;
     max-height: 500px;
-    border-style: double;
+    /*border-style: double;*/
     grid-template-columns: repeat(10, 10%);
     aspect-ratio: 1/1;
 }
 
-.button {
-
-    border-style: double;
+button {
+    aspect-ratio: 1/1;
+    min-height: 10px;
+    min-width: 10px;
 }
+
+.announcer {
+    z-index: 10;
+}
+
+
 
