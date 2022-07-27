@@ -1,9 +1,9 @@
+
 body {
-    height: 100%;
-    min-height: 1000px;
-    width: 100%;
-    background: linear-gradient(0deg, #ffc8da 0%, #615dad 100%);
+    background: linear-gradient(45deg, #184D51 20%, #062370 100%);
     background-repeat: no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
 }
 
 /*MENU*/
@@ -155,25 +155,40 @@ figcaption {
 
 .grid {
     display: grid;
-    margin: auto;
-    padding: 200px;
-    min-width: 200px;
-    min-height: 200px;
-    max-width: 500px;
-    max-height: 500px;
+    margin-left: 35%;
+    margin-right:35%;
+    margin-top:5%;
+    
     /*border-style: double;*/
     grid-template-columns: repeat(10, 10%);
     aspect-ratio: 1/1;
+    background-color: #0090e9;
+    box-shadow: 20px, 20px, 40px, 20px, #171717;
 }
 
 button {
-    aspect-ratio: 1/1;
     min-height: 10px;
     min-width: 10px;
+    aspect-ratio: 1/1;
+    
 }
 
 .announcer {
     z-index: 10;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        margin: 15%;
+        margin-top: 40%;
+        
+        /*border-style: double;*/
+        grid-template-columns: repeat(10, 10%);
+        aspect-ratio: 1/1;
+    }
+    
 }
 
 
