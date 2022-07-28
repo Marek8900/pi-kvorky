@@ -26,15 +26,17 @@ for (let i = 0; i < 100; i++) {
         checkGame();
         announceWin();
         if (btn[i].classList.contains("circle")){
-            var crc = document.createElement("img");
-            crc.src = "./circle.svg";
-            btn[i].append(crc);
+            //var crc = document.createElement("img");
+            //crc.src = "./circle.svg";
+            var crc = document.createElement("div");
+            crc.classList.add("crc")
+            btn[i].appendChild(crc);
             btn[i].style.pointerEvents = 'none';
-            crc.style.height = "95%";
+            /*crc.style.height = "95%";
             crc.style.minHeight = "10px";
             crc.style.width = "95%";
             crc.style.minWidth = "10px";
-            crc.style.display = "block";
+            crc.style.display = "block";*/
         } else {
             var crs = document.createElement("img");
             crs.src = "./cross.svg";
